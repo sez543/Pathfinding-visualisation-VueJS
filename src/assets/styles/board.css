@@ -1,0 +1,127 @@
+.board {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #4d90ff;
+}
+
+.col {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #4d90ff;
+  border: 1px solid #616161;
+  margin-left: -1px;
+  margin-top: -1px;
+}
+
+/* .tile:hover {
+  background-color: #9b9b9b;
+} */
+
+.instant {
+  animation: none !important;
+}
+
+.destination {
+  background-color: #64dd17 !important;
+}
+
+.destination:hover {
+  background-color: #48a50e !important;
+}
+
+.origin {
+  background-color: #ff5252 !important;
+}
+
+.origin:hover {
+  background-color: #cc3c3c !important;
+}
+
+/*Animations*/
+@keyframes path {
+  0% {
+    /* transform: scale(0.6); */
+    background-color: rgb(255, 254, 106);
+  }
+
+  50% {
+    /* transform: scale(1.2); */
+    background-color: rgb(255, 254, 106);
+  }
+
+  100% {
+    /* transform: scale(1); */
+    background-color: rgb(255, 254, 106);
+  }
+}
+
+@keyframes wall {
+  0% {
+    transform: scale(0.5);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes visited {
+  0% {
+    /* transform: scale(0.3); */
+    background-color: rgba(41, 4, 24, 0.75);
+    /* border-radius: 100%; */
+  }
+
+  50% {
+    background-color: rgba(97, 0, 20, 0.75);
+  }
+
+  75% {
+    /* transform: scale(1.2); */
+    background-color: rgba(216, 5, 141, 0.75);
+  }
+
+  100% {
+    /* transform: scale(1); */
+    background-color: rgba(178, 67, 255, 0.75);
+  }
+}
+
+.visited {
+  animation-name: visited;
+  animation-duration: 1s;
+  background-color: rgba(178, 67, 255, 0.75);
+}
+
+.inst_visited {
+  background-color: rgba(0, 190, 218);
+}
+
+.path {
+  animation-name: path;
+  animation-duration: 1s;
+  background-color: rgb(255, 254, 106);
+}
+
+.inst_path {
+  background-color: rgb(255, 254, 106);
+}
+
+.wall {
+  background-color: rgb(12, 53, 71);
+  /* animation-name: wall;
+  animation-duration: 0.3s; */
+}

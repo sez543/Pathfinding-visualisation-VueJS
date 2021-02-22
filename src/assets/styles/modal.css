@@ -1,0 +1,65 @@
+.md-dialog-title {
+  text-align: center !important;
+  font-size: 2.5em !important;
+  padding: 0 !important;
+  margin: 30px 10px !important;
+}
+
+.md-tabs-indicator {
+  background-color: #64dd17 !important;
+}
+
+.md-tab-nav-button {
+  color: #64dd17 !important;
+}
+
+.md-dialog-container {
+  width: auto !important;
+  max-width: 1000px !important;
+  margin: 15px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .md-dialog-container {
+    margin: 0 !important;
+    overflow-y: auto !important;
+  }
+}
+
+.md-dialog-container a {
+  color: #64dd17 !important;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.md-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0 !important;
+}
+
+.image {
+  margin: 10px 0;
+  margin-top: 0;
+}
+
+.small {
+  width: 200px;
+}
+
+.large {
+  width: 400px;
+  margin: 20px 0;
+}
+
+.md-dialog-actions .md-button {
+  min-width: unset !important;
+  height: auto !important;
+}
+
+.md-dialog-actions .md-button .md-ripple {
+  padding: 15px 30px !important;
+}

@@ -1,0 +1,7 @@
+- Allow multiple executions without reload
+- Block all user interaction during execution
+- Implement a reliable animation system
+- Add on the spot execution
+- Implement a tutorial modal
+- Implemet Floyd-Warshall/BFS/DFS
+- Bug Fixing / General Refactoring

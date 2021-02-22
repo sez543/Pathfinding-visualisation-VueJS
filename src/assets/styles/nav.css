@@ -1,0 +1,68 @@
+.settings {
+  margin: 10px 0;
+}
+.settings {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.settings .buttons .md-button:not(.md-icon-button) {
+  font-size: large;
+  min-width: unset;
+  width: auto;
+  flex: 1;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.danger {
+  background-color: #ff5252 !important;
+}
+.moderate {
+  background-color: #ff9800 !important;
+}
+.settings .md-field {
+  width: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.md-app-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 960px) {
+  .md-toolbar {
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .settings .buttons .md-button:not(.md-icon-button) {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .settings {
+    flex-direction: column;
+  }
+  .settings .md-field {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons .md-button:not(.md-icon-button) {
+    width: 100% !important;
+  }
+}
